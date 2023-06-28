@@ -174,7 +174,7 @@ model_path = f"{config['base_dir']}/model_GCN_LSTM_multitask"
 if not os.path.exists(model_path):
     os.mkdir(model_path)
 
-f = open(f"{config['base_dir']}/data_processed/Tayyaba-processed_word_embedding_all-faster.pkl",'rb')
+f = open(f"{config['base_dir']}/data_processed/processed_word_embedding_all-faster.pkl",'rb')
 all_posts = pickle.load(f)
 f.close()
 
