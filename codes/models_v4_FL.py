@@ -55,7 +55,7 @@ def masked_categorical_crossentropy(y_true, y_pred):
     return K.sum(loss) / K.sum(mask)
 
 
-def focal_loss_crossentropy(y_true, y_pred, gamma=2.0, alpha=[0.2,0.25,0.5,0.05]):
+def focal_loss_crossentropy(y_true, y_pred, gamma=2.0, alpha=[0.2,0.25,0.5,0.05]): # O, IE, IS, NT
     alpha = np.asarray(alpha)
     mask = K.sum(y_true[..., :3], axis=-1) #sum the target_user label vector
     bool_mask = np.sum(y_true[..., 0:3], axis=-1) != 0 
