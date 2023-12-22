@@ -12,7 +12,7 @@ from utils.job import get_job_config
 import os
 # Load Dataset
 import pickle
-from embedding import DataEmbedding
+
 # from data_reader import DataReader
 from data_reader import *
 import numpy as np

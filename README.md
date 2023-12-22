@@ -33,12 +33,12 @@ Loitongbam Singh, Stuart Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, Sant
 ## License
 
 ### Data Set: 
-The CLPsych data set is proprietary and not shared here. Please contact the competition organisers at clpsych2022-organizers@googlegroups.com to get a copy of its distribution.
+You can email for the dataset to: [Stuart E Middleton](https://www.southampton.ac.uk/~sem03/) (sem03@soton.ac.uk)
 ### Software: 
  - © Copyright University of Southampton, 2022, Highfield, University Road, Southampton SO17 1BJ.
- - Created By : Tayyaba Azim and Gyanendro Loitongbam
- - Created Date : 2022/05/26
- - Project : SafeSpacesNLP (https://www.tas.ac.uk/safespacesnlp/)
+ - Created By : [Gyanendro Loitongbam](https://www.southampton.ac.uk/people/5zbfm5/)
+ - Created Date : 2023/06/20
+ <!-- - Project : SafeSpacesNLP (https://www.tas.ac.uk/safespacesnlp/) -->
 
 ## Installation Requirements Under Ubuntu 20.04LTS 
 + The experiments were run on Dell Precision 5820 Tower Workstation with Nvidia Quadro RTX 6000 24 GB GPU using Nvidia CUDA Toolkit 11.7 and Ubunti 20.04 LTS.
@@ -61,7 +61,8 @@ transformers                  4.20.1
 ```
 ## Pretrained Models Required
 + download [fastText embedding vectors](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip)
-```
+
+<!-- ```
 cd <uos_clpsych_dir>
 mkdir dataset
 cd <uos_clpsych_dir>/dataset
@@ -74,4 +75,4 @@ unzip wiki-news-300d-1M.vec.zip
 There are two types of sentence embedding methods considered for this study (Please refer to the paper for detail explaination):
 + *sent_emb*: fastText + SBERT 
 + *sent_score_emb*: fastText + SBERT + Task-specific scores
-
+ -->

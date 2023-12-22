@@ -12,7 +12,7 @@ from utils.job import get_job_config
 import os
 # Load Dataset
 import pickle
-from embedding import DataEmbedding
+
 # from data_reader import DataReader
 from data_reader import *
 import numpy as np
@@ -153,7 +153,7 @@ f = open(f"{processed_dir}/processed_training_set_considered-tuser.pkl",'wb')
 pickle.dump((target_user_pids,target_user_labels,considered_timelines_v2),f)
 f.close()
 
-f = open(f"{config['base_dir']}/data_processed/Tayyaba-processed_word_embedding_all-faster.pkl",'rb')
+f = open(f"{config['base_dir']}/data_processed/processed_word_embedding_all-faster.pkl",'rb')
 annotator_all_posts = pickle.load(f)
 f.close()
 
