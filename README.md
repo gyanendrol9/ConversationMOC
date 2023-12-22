@@ -49,6 +49,7 @@ pip install gensim
 pip install transformers
 pip install tensorflow
 pip install keras
+pip install networkx
 
 Package                       Version
 ----------------------------- --------------------
