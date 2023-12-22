@@ -9,19 +9,14 @@ This work was supported by the Natural Environment Research Council (NE/S015604/
 Loitongbam Singh, Stuart Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, Santiago De Ossorno Garcia. __*ConversationMoC: Encoding Conversational Dynamics using Multiplex Network for Identifying Moment of Change in Mood and Mental Health Classification*__.
 <!--
 ```
-@inproceedings{azim-etal-2022-detecting,
-    title = "Detecting Moments of Change and Suicidal Risks in Longitudinal User Texts Using Multi-task Learning",
-    author = "Azim, Tayyaba  and
-      Singh, Loitongbam  and
-      Middleton, Stuart",
-    booktitle = "Proceedings of the Eighth Workshop on Computational Linguistics and Clinical Psychology",
-    month = July,
-    year = "2022",
-    address = "Seattle, USA",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.clpsych-1.19",
-    pages = "213--218",
-    abstract = "This work describes the classification system proposed for the Computational Linguistics and Clinical Psychology (CLPsych) Shared Task 2022. We propose the use of multitask learning approach with bidirectional long-short term memory (Bi-LSTM) model for predicting changes in user{'}s mood and their suicidal risk level. The two classification tasks have been solved independently or in an augmented way previously, where the output of one task is leveraged for learning another task, however this work proposes an {`}all-in-one{'} framework that jointly learns the related mental health tasks. The experimental results suggest that the proposed multi-task framework outperforms the remaining single-task frameworks submitted to the challenge and evaluated via timeline based and coverage based performance metrics shared by the organisers. We also assess the potential of using various types of feature embedding schemes that could prove useful in initialising the Bi-LSTM model for better multitask learning in the mental health domain.",
+@inproceedings{singh-et-al_2024,
+    title = "ConversationMoC: Encoding Conversational Dynamics using Multiplex Network for Identifying Moment of Change in Mood and Mental Health Classification",
+    author = "Singh, Loitongbam  and
+      Middleton, Stuart and Azim, Tayyaba  and Nichele, Elena and Lyu, Pinyi and  Garcia, Santiago De Ossorno",
+    booktitle = "Proceedings of the Machine Learning for Cognitive and Mental Health Workshop (ML4CMH)@AAAI 2024",
+    month = Feb,
+    year = "2024",
+    address = "Vancouver, Canada",
 }
   ```
 -->
