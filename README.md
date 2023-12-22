@@ -26,9 +26,9 @@ Loitongbam Singh, Stuart Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, Sant
   ```
 -->
 
-## Proposed Framework
-<img src="https://github.com/stuartemiddleton/uos_clpsych/blob/main/image/Pipeline.png" alt="Framework">
-<br>
+## Proposed pipeline
+![Pipeline](image/pipeline.png)
+![Multiplex network encoding](image/multiplex-encoding.png)
 
 ## License
 
