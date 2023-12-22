@@ -33,7 +33,7 @@ Loitongbam Singh, Stuart Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, Sant
 ## License
 
 ### Data Set: 
-You can email for the dataset to: [Stuart E Middleton](https://www.southampton.ac.uk/~sem03/) (sem03@soton.ac.uk)
+Email for the dataset request to: [Stuart E Middleton](https://www.southampton.ac.uk/~sem03/) (sem03@soton.ac.uk)
 ### Software: 
  - © Copyright University of Southampton, 2022, Highfield, University Road, Southampton SO17 1BJ.
  - Created By : [Gyanendro Loitongbam](https://www.southampton.ac.uk/people/5zbfm5/)
@@ -61,7 +61,7 @@ transformers                  4.20.1
 
 ```
 ## Pretrained Models Required
-+ download [fastText embedding vectors](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip)
++ Download [fastText embedding vectors](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip)
 
 <!-- ```
 cd <uos_clpsych_dir>
