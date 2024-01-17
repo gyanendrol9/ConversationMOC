@@ -45,6 +45,8 @@ pip install transformers
 pip install tensorflow
 pip install keras
 pip install networkx
+pip install stellargraph
+pip install sklearn
 
 Package                       Version
 ----------------------------- --------------------
@@ -53,7 +55,8 @@ keras                         2.9.0
 sentence-transformers         2.2.0
 tensorflow                    2.9.1
 transformers                  4.20.1
-
+stellargraph                  1.2.1
+sklearn                       1.1.1
 ```
 ## Pretrained Models Required
 + Download [fastText embedding vectors](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip)
