@@ -39,14 +39,15 @@ Email for the dataset request to: [Stuart E Middleton](https://www.southampton.a
 + The experiments were run on Dell Precision 5820 Tower Workstation with Nvidia Quadro RTX 6000 24 GB GPU using Nvidia CUDA Toolkit 11.7 and Ubunti 20.04 LTS.
 + Install the following pre-requisite libraries:
 ```
-pip install -U sentence-transformers
-pip install gensim
 pip install transformers
 pip install tensorflow
 pip install keras
 pip install networkx
 pip install stellargraph
 pip install sklearn
+pip install sentence-transformers
+pip install gensim
+
 
 Package                       Version
 ----------------------------- --------------------
