@@ -21,11 +21,12 @@ Loitongbam Singh, Stuart Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, Sant
   ```
 -->
 
+## Poster
+![Poster](poster/poster_final.pdf)
+
 ## Proposed pipeline
 ![Pipeline](image/pipeline.png)
 ![Multiplex network encoding](image/multiplex-encoding.png)
-
-## License
 
 ### Data Set: 
 Email for the dataset request to: [Stuart E Middleton](https://www.southampton.ac.uk/~sem03/) (sem03@soton.ac.uk)
