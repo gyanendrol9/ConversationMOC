@@ -36,27 +36,16 @@ Email for the dataset request to: [Stuart E Middleton](https://www.southampton.a
 
 ## Installation Requirements Under Ubuntu 20.04LTS 
 + The experiments were run on Dell Precision 5820 Tower Workstation with Nvidia Quadro RTX 6000 24 GB GPU using Nvidia CUDA Toolkit 11.7 and Ubunti 20.04 LTS.
-+ Install the following pre-requisite libraries:
++ Install the following pre-requisite Python3.8 libraries:
 ```
-pip install transformers
-pip install tensorflow
-pip install keras
+pip install transformers==4.20.1
+pip install tensorflow==2.9.1
+pip install keras==2.9.0
 pip install networkx
-pip install stellargraph
-pip install sklearn
-pip install sentence-transformers
-pip install gensim
-
-
-Package                       Version
------------------------------ --------------------
-gensim                        4.0.1
-keras                         2.9.0
-sentence-transformers         2.2.0
-tensorflow                    2.9.1
-transformers                  4.20.1
-stellargraph                  1.2.1
-sklearn                       1.1.1
+pip install stellargraph==1.2.1
+pip install sklearn==1.1.1
+pip install sentence-transformers==2.2.0
+pip install gensim==4.0.1
 ```
 ## Pretrained Models Required
 + Download [fastText embedding vectors](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip)
