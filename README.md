@@ -12,8 +12,8 @@ Loitongbam Singh, Stuart E. Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, S
 ```
 @inproceedings{singh-et-al_2024,
     title = "ConversationMoC: Encoding Conversational Dynamics using Multiplex Network for Identifying Moment of Change in Mood and Mental Health Classification",
-    author = "Singh, Loitongbam  and
-      Middleton, Stuart and Azim, Tayyaba  and Nichele, Elena and Lyu, Pinyi and  Garcia, Santiago De Ossorno",
+    author = "Singh, Loitongbam Gyanendro and
+      Middleton, Stuart E. and Azim, Tayyaba  and Nichele, Elena and Lyu, Pinyi and  Garcia, Santiago De Ossorno",
     booktitle = "Proceedings of the Machine Learning for Cognitive and Mental Health Workshop (ML4CMH)@AAAI 2024",
     month = Feb,
     year = "2024",
