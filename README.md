@@ -7,7 +7,7 @@ This work was supported by the Natural Environment Research Council (NE/S015604/
 ![Poster](poster/poster_final.pdf)
 
 
-Loitongbam Singh, Stuart Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, Santiago De Ossorno Garcia. __*ConversationMoC: Encoding Conversational Dynamics using Multiplex Network for Identifying Moment of Change in Mood and Mental Health Classification*__.
+Loitongbam Singh, Stuart E. Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, Santiago De Ossorno Garcia. __*ConversationMoC: Encoding Conversational Dynamics using Multiplex Network for Identifying Moment of Change in Mood and Mental Health Classification*__.
 <!--
 ```
 @inproceedings{singh-et-al_2024,
@@ -19,7 +19,7 @@ Loitongbam Singh, Stuart Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, Sant
     year = "2024",
     address = "Vancouver, Canada",
 }
-  ```
+```
 -->
 
 ## Proposed pipeline
