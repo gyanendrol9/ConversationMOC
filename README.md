@@ -8,7 +8,7 @@ This work was supported by the Natural Environment Research Council (NE/S015604/
 
 
 Loitongbam Singh, Stuart E. Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, Santiago De Ossorno Garcia. __*ConversationMoC: Encoding Conversational Dynamics using Multiplex Network for Identifying Moment of Change in Mood and Mental Health Classification*__.
-<!--
+
 ```
 @inproceedings{singh-et-al_2024,
     title = "ConversationMoC: Encoding Conversational Dynamics using Multiplex Network for Identifying Moment of Change in Mood and Mental Health Classification",
@@ -20,14 +20,14 @@ Loitongbam Singh, Stuart E. Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, S
     address = "Vancouver, Canada",
 }
 ```
--->
 
 ## Proposed pipeline
 ![Pipeline](image/pipeline.png)
 ![Multiplex network encoding](image/multiplex-encoding.png)
 
 ### Data Set: 
-Email for the dataset request to: [Stuart E Middleton](https://www.southampton.ac.uk/~sem03/) (sem03@soton.ac.uk)
+Dataset and model checkpoint files can be downloaded from Zendo. Dataset and model checkpoint files should be checked into the respective directories. Zendo dataset <link to be added>
+
 ### Software: 
  - © Copyright University of Southampton, 2022, Highfield, University Road, Southampton SO17 1BJ.
  - Created By : [Gyanendro Loitongbam](https://www.southampton.ac.uk/people/5zbfm5/)
