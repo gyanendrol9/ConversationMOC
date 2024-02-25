@@ -26,13 +26,13 @@ Loitongbam Singh, Stuart E. Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, S
 ![Multiplex network encoding](image/multiplex-encoding.png)
 
 ### Data Set: 
-Dataset and model checkpoint files can be downloaded from Zendo. Dataset and model checkpoint files should be checked into the respective directories. Zendo dataset <link to be added>
+Dataset and model checkpoint files can be downloaded from Zendo. Dataset and model checkpoint files should be checked into the respective directories. Zendo dataset \<link to be added\>
 
 ### Software: 
  - © Copyright University of Southampton, 2022, Highfield, University Road, Southampton SO17 1BJ.
  - Created By : [Gyanendro Loitongbam](https://www.southampton.ac.uk/people/5zbfm5/)
  - Created Date : 2023/06/20
- <!-- - Project : SafeSpacesNLP (https://www.tas.ac.uk/safespacesnlp/) -->
+ 
 
 ## Installation Requirements Under Ubuntu 20.04LTS 
 + The experiments were run on Dell Precision 5820 Tower Workstation with Nvidia Quadro RTX 6000 24 GB GPU using Nvidia CUDA Toolkit 11.7 and Ubunti 20.04 LTS.
