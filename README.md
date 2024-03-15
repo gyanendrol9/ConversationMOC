@@ -26,7 +26,8 @@ Loitongbam Singh, Stuart E. Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, S
 ![Multiplex network encoding](image/multiplex-encoding.png)
 
 ### Data Set: 
-Dataset and model checkpoint files can be downloaded from Zendo. Dataset and model checkpoint files should be checked into the respective directories. Zendo dataset \<link to be added\>
+Dataset can be downloaded from Zendo. [Zendo dataset](https://zenodo.org/records/10711636)
+<!--Dataset and model checkpoint files should be checked into the respective directories.-->
 
 ### Software: 
  - © Copyright University of Southampton, 2022, Highfield, University Road, Southampton SO17 1BJ.
