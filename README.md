@@ -27,7 +27,7 @@ Loitongbam Singh, Stuart E. Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, S
 
 ### Data Set: 
 Dataset can be downloaded from Zendo. [Zendo dataset](https://zenodo.org/records/10711636)
-<!--Dataset and model checkpoint files should be checked into the respective directories.-->
+<!--Dataset and model checkpoint files should be checked into the respective directories. -->
 
 ### Software: 
  - © Copyright University of Southampton, 2022, Highfield, University Road, Southampton SO17 1BJ.
