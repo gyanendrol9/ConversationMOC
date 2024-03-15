@@ -4,6 +4,7 @@ This work introduces a unique conversation-level dataset and investigates the im
 
 This work was supported by the Natural Environment Research Council (NE/S015604/1), the Economic and Social Research Council (ES/V011278/1) and the Engineering and Physical Sciences Research Council (EP/V00784X/1). The authors acknowledge the use of the IRIDIS High Performance Computing Facility, and associated support services at the University of Southampton, in the completion of this work. 
 
+![Paper](https://ceur-ws.org/Vol-3649/Paper1.pdf)
 ![Poster](poster/poster_final.pdf)
 
 
