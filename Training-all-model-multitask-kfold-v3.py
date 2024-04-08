@@ -4,38 +4,40 @@ tf.config.run_functions_eagerly(True)
 
 import sys
 sys.path.append('codes')
-from data_reader import *
-from plots import *
+# from data_reader import *
+# from plots import *
 from models_v4 import *
 
 # Prepare the function to load the data
-from utils.job import get_job_config
 import os
 # Load Dataset
 import pickle
-# from data_reader import DataReader
-import matplotlib.pyplot as plt
-plt.style.use("ggplot")
 import numpy as np
 
-def read_yamlconfig(path):
-    job = get_job_config(path)
-    params = job['PARAMS']
 
-    base_dir = params['base_dir']
-    print("working base_dir: ", base_dir )    
-    
-    source_data_dir = params['source_data_dir']
-    print("source_data_dir: ", source_data_dir)
+import os
+import pickle
+import argparse
 
-    return params
+def parse_args():
+    parser = argparse.ArgumentParser(description='Evaluate the models')
+    parser.add_argument('--source_dir', help='work directory')
+    parser.add_argument('--out_dir', help='Model save directory')
+    parser.add_argument('--shuffle_seed', help='shuffle_seed')
+    parser.add_argument('--epochs', help='work directory')
+    parser.add_argument('--batch_size', help='Model save directory')
+    args = parser.parse_args()
+    return args
 
-# Prepare the configuration
-yaml_path = os.path.join("configs", "job_reddit.yaml")
+args = parse_args()
+processed_dir = args.source_dir   
+shuffle_seed = int(args.shuffle_seed)
+model_path = args.out_dir
+epochs = int(args.epochs)
+batch_size = int(args.batch_size)
 
-
-# args = parse_job_args()
-config = read_yamlconfig(yaml_path)
+if not os.path.exists(model_path):
+    os.mkdir(model_path)
 
 # Train test split
 from sklearn.model_selection import KFold
@@ -45,11 +47,9 @@ import tensorflow as tf
 from tensorflow.keras.utils import to_categorical
 from sklearn.metrics import classification_report
 
-np.random.seed(config['shuffle_seed'])
-tf.random.set_seed(config['shuffle_seed'])
-random.seed(config['shuffle_seed'])
-
-processed_dir = f"{config['base_dir']}/data_processed"
+np.random.seed(shuffle_seed)
+tf.random.set_seed(shuffle_seed)
+random.seed(shuffle_seed)
 
 f = open(f"{processed_dir}/processed_training_padded_considered_final_all_emb.pkl",'rb')
 (timeline_pids, timeline_node_feat_seq,timeline_node_moc_seq,timeline_network,timeline_users_flag,timeline_users, timeline_topics) = pickle.load(f)
@@ -170,11 +170,8 @@ for topic in topic_k_fold:
 for i in range(10):
     print(len(k_fold[i]['Train']),len(k_fold[i]['Test']))
 
-model_path = f"{config['base_dir']}/model_GCN_LSTM_multitask"
-if not os.path.exists(model_path):
-    os.mkdir(model_path)
 
-f = open(f"{config['base_dir']}/data_processed/processed_word_embedding_all-faster.pkl",'rb')
+f = open(f"{processed_dir}/processed_post_embedding_all-faster.pkl",'rb')
 all_posts = pickle.load(f)
 f.close()
 
@@ -209,8 +206,6 @@ for pids in timeline_pids:
     emotion_net.append(padded_EA)
     sentiment_net.append(padded_SA)
 
-epochs = config['epochs']
-batch_size = config['batch_size']
 
 for kfold in reversed(range(1)):
     print(f'------------------------------\nTraining Fold: {kfold}\n------------------------------')
@@ -232,7 +227,6 @@ for kfold in reversed(range(1)):
 
     calculate_statistics_task1(y_train)
     calculate_statistics_task1(y_test)
-
 
     # ### All conversations
     # Define input shapes
