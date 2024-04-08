@@ -49,16 +49,16 @@ pip install sklearn==1.1.1
 pip install sentence-transformers==2.2.0
 pip install gensim==4.0.1
 ```
-## Pretrained Models Required
+## Pretrained Models
 + Download [fastText embedding vectors](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip)
 
 ## Preparing Data set
 For a conversation *idx* prepare the dataset to train in the following formats:
 ![Dataset](image/Data-preparation.png)
 
+# Post embedding and Training model
 ```
-# Training preparation (Word embedding)
-python 1.2.post_embedding_v2.py --source_dir work_dir --wv_model wiki-news-300d-1M.vec
+python Post_embedding.py --source_dir work_dir --wv_model wiki-news-300d-1M.vec
 
 # Training model 
 python Training-all-model-multitask-kfold-v3.py --source_dir work_dir --out_dir model-kfold-v3-out --shuffle_seed 42 --epochs 40 --batch_size 64
