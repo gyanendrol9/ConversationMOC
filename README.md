@@ -58,10 +58,12 @@ For a conversation *idx* prepare the dataset to train in the following formats:
 
 ```
 # Training preparation (Word embedding)
-python 1.2.post_embedding_v2.py --source_dir Statistics --wv_model lexicon/wiki-news-300d-1M.vec
+python 1.2.post_embedding_v2.py --source_dir work_dir --wv_model wiki-news-300d-1M.vec
 
 # Training model 
+python Training-all-model-multitask-kfold-v3.py --source_dir work_dir --out_dir model-kfold-v3-out --shuffle_seed 42 --epochs 40 --batch_size 64
 
+python Training-all-model-multitask-kfold-v3-FLF.py --source_dir work_dir --out_dir model-kfold-v3-out --shuffle_seed 42 --epochs 40 --batch_size 64
 ```
 
 
@@ -75,8 +77,3 @@ unzip wiki-news-300d-1M.vec.zip
 ```
 
 
-## Sentence Embedding Methods
-There are two types of sentence embedding methods considered for this study (Please refer to the paper for detail explaination):
-+ *sent_emb*: fastText + SBERT 
-+ *sent_score_emb*: fastText + SBERT + Task-specific scores
- -->
