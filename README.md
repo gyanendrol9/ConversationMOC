@@ -55,6 +55,11 @@ pip install gensim==4.0.1
 ## Preparing Data set
 For a conversation *idx*
 ```
+| Column 1  | Column 2  | Column 3  |
+|-----------|-----------|-----------|
+| Row 1 Col 1 | Row 1 Col 2 | Row 1 Col 3 |
+| Row 2 Col 1 | Row 2 Col 2 | Row 2 Col 3 |
+
 | Data     | Information | Example |
 |----------|----------|----------|
 |timeline_pids[idx] | Sequence of pids in the conversation *idx* | [*pid_1*, *pid_2*, *pid_3*, *pid_4*, ...,*pid_n*]|
