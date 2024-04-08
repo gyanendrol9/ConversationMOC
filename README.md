@@ -56,7 +56,7 @@ pip install gensim==4.0.1
 For a conversation *idx* prepare the dataset to train in the following formats:
 ![Dataset](image/Data-preparation.png)
 
-# Post embedding and Training model
+## Post embedding and Training model
 ```
 python Post_embedding.py --source_dir work_dir --wv_model wiki-news-300d-1M.vec
 
