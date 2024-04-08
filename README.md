@@ -58,22 +58,12 @@ For a conversation *idx* prepare the dataset to train in the following formats:
 
 ## Post embedding and Training model
 ```
+# Post embedding [avg. fastText word emb + SBERT + Taskspecific-scores]
 python Post_embedding.py --source_dir work_dir --wv_model wiki-news-300d-1M.vec
 
 # Training model 
 python Training-all-model-multitask-kfold-v3.py --source_dir work_dir --out_dir model-kfold-v3-out --shuffle_seed 42 --epochs 40 --batch_size 64
 
+## Training with Focal Loss Function version
 python Training-all-model-multitask-kfold-v3-FLF.py --source_dir work_dir --out_dir model-kfold-v3-out --shuffle_seed 42 --epochs 40 --batch_size 64
 ```
-
-
-
-<!-- ```
-cd <uos_clpsych_dir>
-mkdir dataset
-cd <uos_clpsych_dir>/dataset
-wget -O wiki-news-300d-1M.vec.zip https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip
-unzip wiki-news-300d-1M.vec.zip
-```
-
-
