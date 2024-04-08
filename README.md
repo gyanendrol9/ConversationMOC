@@ -53,31 +53,14 @@ pip install gensim==4.0.1
 + Download [fastText embedding vectors](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip)
 
 ## Preparing Data set
-For a conversation *idx*
-```
-| Variable name     | Information | Example |
-|----------|-------------|----------|
-|timeline_pids[idx] | Sequence of pids in the conversation *idx* | [*pid_1*, *pid_2*, *pid_3*, *pid_4*, ...,*pid_n*]|
-|timeline_node_feat_seq[idx] | Representation matrix of posts in the conversation *idx*  |Matrix shape: (n posts, emb dimension)|
-|timeline_node_moc_seq[idx] | MoC annotated labels  | ['O', ' ', ' ', 'IS', ..., 'O']|
-|timeline_network[idx] | Reply adjacency matrix of the conversation *idx* |Matrix shape: (n x n)|
-|timeline_users_flag[idx] | Boolean flag of the sequence of pids in a conversation *idx* as target user or not  |[*True*, *False*, *False*, *True*, ..., *True*]|
-|timeline_topics[idx] | Topic of the conversation *idx* | *Schizophrenia*|
-```
+For a conversation *idx* prepare the dataset to train in the following formats:
+![Dataset](image/Data-preparation.png)
 
 ```
 # Training preparation (Word embedding)
 python 1.2.post_embedding_v2.py --source_dir Statistics --wv_model lexicon/wiki-news-300d-1M.vec
 
 # Training model 
-
-timeline_pids[idx] - Holds the sequence of pids in a conversation 'idx'
-timeline_node_feat_seq[idx] - Representation matrix of shape (number of posts in the conversation 'idx', embedding dimension) 
-timeline_node_moc_seq[idx] - MoC annotated labels wrt the sequence of pids in the conversation 'idx'
-timeline_network[idx] - Reply adjacency matrix of the conversation 'idx'
-timeline_users_flag[idx] - Boolean flag of the sequence of pids in a conversation 'idx' as target user or not 
-timeline_topics[idx] - Topic of the conversation 'idx'
-
 
 ```
 
