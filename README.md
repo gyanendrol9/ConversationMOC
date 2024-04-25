@@ -33,7 +33,7 @@ Dataset can be downloaded from [Zendo](https://zenodo.org/records/10711636).
 <!--Dataset and model checkpoint files should be checked into the respective directories. -->
 
 ### Software: 
- - © Copyright University of Southampton, 2022, Highfield, University Road, Southampton SO17 1BJ.
+ - © Copyright University of Southampton, 2023, Highfield, University Road, Southampton SO17 1BJ.
  - Created By : [Gyanendro Loitongbam](https://www.southampton.ac.uk/people/5zbfm5/)
  - Created Date : 2023/06/20
  
