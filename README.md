@@ -24,6 +24,8 @@ Loitongbam Singh, Stuart E. Middleton, Tayyaba Azim, Elena Nichele, Pinyi Lyu, S
 
 ## Proposed pipeline
 ![Pipeline](image/pipeline.png)
+
+### Multiplex network encoding pipeline:
 ![Multiplex network encoding](image/multiplex-encoding.png)
 
 ### Data Set: 
